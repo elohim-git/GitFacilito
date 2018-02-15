@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Copec: Pantalla 1</title>
+<!--CSS Plugins-->
+<link rel="stylesheet" type="text/css" href="../comun/app/framework/bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="../comun/app/css/styles.css"/>
+<link rel="stylesheet" type="text/css" href="../comun/app/css/ui.css"/>
+<link rel="stylesheet" type="text/css" href="../comun/app/css/componentes.css"/>
+<link rel="stylesheet" type="text/css" href="../comun/app/css/plugins/swiper.css"/>
+<link rel="stylesheet" type="text/css" href="PantallaAdmin/css/page.css"/>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="../comun/app/framework/jquery.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="../comun/app/framework/bootstrap/js/bootstrap.min.js"></script>
+<!--- APP-->
+<script type="text/javascript" src="../comun/app/js/app.js"></script>
+<script type="text/javascript" src="../comun/app/framework/swiper.js"></script>
+<!--- Componentes-->
+<!--<script type="text/javascript" src="app/js/componentes/MenuPrincipal.js"></script>-->
+<script type="text/javascript" src="../comun/app/js/componentes/MenuPrincipal.js"></script>
+<script src="../comun/IComun.js" type="text/javascript"></script>
+<!--Pantallas-->
+<script type="text/javascript" src="PantallaAdmin/js/pantalla.js"></script>
+<!--- The following scripts are necessary to do TweenLite tweens on CSS properties -->
+<script type="text/javascript" src="../comun/app/framework/gsap/plugins/CSSPlugin.js"></script>
+<script type="text/javascript" src="../comun/app/framework/gsap/TweenLite.js"></script>
+<script type="text/javascript" src="../comun/app/framework/gsap/TweenMax.js"></script>
+<script type="text/javascript" src="../comun/app/framework/gsap/TimelineLite.js"></script>
+<script type="text/javascript" src="../comun/app/framework/gsap/easing/EasePack.js"></script>
+<script type="text/javascript" src="../comun/app/framework/gsap/utils/Draggable.js"></script>
+<script type="text/javascript" src="../comun/app/framework/gsap/plugins/thr.js"></script>
+<script src="../comun/app/js/componentes/Footer.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="contenedor">
+    	<div id="header"></div>
+        <div id="menu">
+        </div>
+        <div id="content">
+            <div class="titulo">Habilite/deshabilite un <strong>producto según stock</strong></div>
+            <!-- Swiper -->
+    	    <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!--<div class="swiper-slide">
+            	        <div class="lista">
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+               	        </div>
+                    </div>
+                    <div class="swiper-slide">
+            	        	<div class="lista">
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+                            <div class="boton-productos"><img src="PantallaAdmin/img/producto1.jpg" height="108" width="198"><span>Huevos revueltos + café</span></div>
+               	        	</div>
+           	        </div>       -->  
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div id="arrow_swiper_left"></div>
+                <div id="arrow_swiper_right"></div>
+            </div>
+        </div>
+        <div id="footer">
+        		<!--<button class="menu-navegacion btn-cancelar">CANCELAR</button>
+                <button class="menu-navegacion">GUARDAR</button>-->
+        </div>
+   	</div>
+    <script>
+        function iniciaControl() {
+            var PantallaAdmin = new Pantalla();
+            PantallaAdmin.getCombos();
+            PantallaAdmin.armarCombos();
+            PantallaAdmin.inicia();
+        }
+    </script>
+</body>
+</html>
